@@ -1,9 +1,11 @@
-#ifndef rayplusplus
-#include "rayplus.c"
+#ifndef _RAYPLUS_c_
+#define _RAYPLUS_C_
 #endif
-#ifndef colision
-#include "colision.c"
+
+#ifndef _COLISION_C_
+#define _COLISION_C_
 #endif
-#ifndef node
-#include "node.c"
+
+#ifndef _NODE_C_
+#define _NODE_C_
 #endif

@@ -1,7 +1,4 @@
-#ifndef raylib
-#include<raylib.h>
-#endif
-
+#include <raylib.h>
 /*Set The Info About The Game
 name author version*/
 typedef struct

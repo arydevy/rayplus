@@ -1,15 +1,11 @@
 #include<stdio.h>
 // if you wana run the sitng elsewere remove ../
-#include "../src/rayplus.h"
-
-
+#include "../src/rayplus.c"
+#include "../src/node.c"
+#include "../src/colision.c"
 
 const int speed=5.0f;
 Screen screen={800,450,"RayPlus [2D colision Exemple]"};
-
-
-
-
 
 int main()
 {
@@ -42,6 +38,13 @@ int main()
 
 int update(void)
 {
+/************************
+ *
+ *
+ *   FIX THIS
+ *
+ ***********************/
+    
     // First We Ceck For Colision
     int coliding=Colision2D(player,);
 

@@ -1,5 +1,5 @@
-#ifndef node
-#include"node.c"
+#ifndef _NODE_C_
+#define _NODE_C_
 #endif
 /*
 Ceck 2D colision between 2 2D hitboxes
