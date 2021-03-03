@@ -1,6 +1,6 @@
 #include<stdio.h>
 // if you wana run the sitng elsewere remove ../
-#include "../rayplus/rayplus.h"
+#include "../src/rayplus.h"
 
 
 
