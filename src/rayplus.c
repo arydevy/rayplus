@@ -1,4 +1,6 @@
+#ifndef raylib
 #include<raylib.h>
+#endif
 
 /*Set The Info About The Game
 name author version*/
