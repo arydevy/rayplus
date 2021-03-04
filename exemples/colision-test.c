@@ -4,59 +4,43 @@
 #include "../src/node.c"
 #include "../src/colision.c"
 
-const int speed=5.0f;
-Screen screen={800,450,"RayPlus [2D colision Exemple]"};
+
+const int screenW=800;
+const int screenH=450;
+const int FPS=60;
 
 int main()
 {
     // First we init raylib and rayplus
-    RayPlus(screen,60);
+    RayPlus(screenW,screenH,"RayPlus [2D colision Exemple]",FPS);
 
-    // Here We Define The App Info (optional)
-    AppInfo app={screen.Name,0.1,"Arydev",0.01};
-    //0.001 rayplus version is the first ever version from 1 March 2021 (Not Relesed)
 
     // Here We Create The Player Node
-    Node2D player={14,14,100,10,5.0f};
-
+    Node2D player = NewNode2D(14,14,100,10);
+    player.speed=5.0f;
 
     // Now Enemy Node
-    Node2D enemy={100,100,screen.H,0,0.0f};
+    Node2D enemy= NewNode2D(100,100,screenH,0);
 
     // Update 
-    while(1)
-    {
-        // First We Ceck For Colision
-    int coliding=Colision2D(player,enemy);
+        while(!WindowShouldClose())
+        {
+            // First We Ceck For Colision
+            int coliding=Colision2D(player,enemy);
 
-    //then we move the player
-    }
+            //then we move the player
+
+            //====Drawing=================
+            BeginDrawing();
+            ClearBackground(ORANGE);
+
+            EndDrawing();
+            //====Drawing=================
+        }
     
+    
+    // Exit Program
+    Exit();
 
     return 0;
-}
-
-int update(void)
-{
-/************************
- *
- *
- *   FIX THIS
- *
- ***********************/
-    
-    // First We Ceck For Colision
-    int coliding=Colision2D(player,);
-
-    //then we move the player
-
-}
-
-int draw(void)
-{
-    BeginDrawing();
-
-    /* Code Here */
-
-    EndDrawing();
 }
